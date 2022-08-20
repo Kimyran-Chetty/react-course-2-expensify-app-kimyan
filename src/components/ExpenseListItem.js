@@ -1,5 +1,31 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+import moment from 'moment';
+import numeral from 'numeral';
+
+//TODO:
+// //load a locale   
+// numeral.register('locale', 'fr', {
+//     delimiters: {
+//         thousands: ' ',
+//         decimal: ','
+//     },
+//     abbreviations: {
+//         thousand: 'k',
+//         million: 'm',
+//         billion: 'b',
+//         trillion: 't'
+//     },
+//     ordinal : function (number) {
+//         return number === 1 ? 'er' : 'ème';
+//     },
+//     currency: {
+//         symbol: 'R'
+//     }
+// });
+
+// // switch between locales
+// //numeral.locale('rand');
 
 //My solution
 const ExpenseListItem = (props) => {  
@@ -9,7 +35,11 @@ const ExpenseListItem = (props) => {
             <h3>{props.item.description}</h3>
             </Link>
             
-            <p> Amount: {props.item.amount} CreatedAt: {props.item.createdAt}</p>
+            <p> 
+            {numeral(props.item.amount/100).format('$0,0.00')} 
+            -
+            {moment(props.item.createdAt).format('MMMM Do, YYYY')}
+            </p>
             
         </div>
     )
