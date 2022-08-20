@@ -1,6 +1,4 @@
-import React from 'React';
-import {connect} from 'react-redux';
-import {removeExpense} from '../actions/expenses';
+import React from 'react';
 import {Link} from 'react-router-dom';
 
 //My solution
