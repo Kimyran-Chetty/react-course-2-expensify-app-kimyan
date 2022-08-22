@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render ExpenseForm 1`] = `
+<div>
+  <div>
+    <h1>
+      Viewing 
+      1
+       
+      expense
+      , totalling: 
+      $2.35
+    </h1>
+  </div>
+</div>
+`;
+
+exports[`should render ExpenseForm 2`] = `<div />`;
