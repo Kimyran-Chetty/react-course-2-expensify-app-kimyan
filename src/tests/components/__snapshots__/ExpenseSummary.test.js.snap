@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should render ExpenseForm 1`] = `
+exports[`should render ExpenseForm with one expense 1`] = `
 <div>
   <div>
     <h1>
@@ -15,4 +15,17 @@ exports[`should render ExpenseForm 1`] = `
 </div>
 `;
 
-exports[`should render ExpenseForm 2`] = `<div />`;
+exports[`should render ExpenseForm with two expenses 1`] = `
+<div>
+  <div>
+    <h1>
+      Viewing 
+      23
+       
+      expenses
+      , totalling: 
+      $2,456,783.45
+    </h1>
+  </div>
+</div>
+`;
